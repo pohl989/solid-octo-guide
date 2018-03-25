@@ -6,14 +6,15 @@ const VideoList = (props) => {
     // you should always add a key from your datasource
     return (
       <VideoListItem
-        onVideoClick={props.onVideoSelect}
+        onVideoSelect={props.onVideoSelect}
         key={video.etag}
-        video={video} />
+        video={video}
+      />
     );
   });
 
   return (
-    <ul className="col-md-4 list-group">
+    <ul className="col-lg-4 list-group">
       {videoItems}
     </ul>
   );
